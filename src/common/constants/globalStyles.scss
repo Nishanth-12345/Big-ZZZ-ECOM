@@ -1,0 +1,28 @@
+@import './color';
+
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Inter:wght@400;500;600;700&display=swap');
+
+input {
+  font-size: 14px;
+
+  &:disabled {
+    background-color: #fafafa;
+    color: #a7a7a7;
+    border-color: #cdcdcd;
+  }
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; // Default font size for paragraphs
+    color: #333; // Default text color
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gotu', sans-serif;
+    font-weight: normal; // Adjust if you want a different weight for headings
+  }
+  
+  input, button, textarea, select {
+    font-family: inherit; // Consistent font across form elements
+  }

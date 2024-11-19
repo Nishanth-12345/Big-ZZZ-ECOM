@@ -1,0 +1,116 @@
+.hs-product-card-wrapper{
+     display: flex;
+     flex-direction: column;
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     width: 100%;
+     overflow: hidden;
+     position: relative;
+     transition: all 0.3s ease-in-out;
+
+
+     .hs-img-container{
+        position: relative;
+        height: 400px;
+        width: 100%;
+        margin-bottom: 12px;
+
+
+        a{
+            width: 100%;
+
+            .hs-product-image{
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                .primary{
+                    display: block;
+                }
+
+                .secondary{
+                    display: none;
+                }
+
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 1;
+                    transition: opacity 1s;
+                    width: 100%;
+                    height: 100%;
+                }
+             
+                &:hover{
+                    .primary{
+                        display: none;
+                    }
+
+                    .secondary{
+                        display: block;
+                    }
+                }
+               
+            }
+        }
+     }
+
+     .hs-product-rating-details{
+        .star-rating{
+            margin-bottom: 2px;
+        }
+
+        .title{
+            margin-bottom: 6px;
+        }
+
+        a{
+            transition: all 0.2s ease-in-out;
+            font-size: 14px;
+            font-weight: 600;
+            color: #383838;
+
+            &:hover{
+               color:  #5d7261;
+            }
+        }
+
+        .hs-product-price{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+
+              p{
+                font-size: 14px;
+
+                &:nth-child(1){
+                   color: #383838;
+                }
+                &:nth-child(2){
+                    color: #737373;
+                    text-decoration: line-through;
+                }
+                &:nth-child(3){
+                    color: #737373;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                }
+              }
+        }
+
+        .hs-description{
+            p{
+                font-size: 12px;
+                display: -webkit-box;
+            line-clamp: 2;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            }
+        }
+     }
+}
